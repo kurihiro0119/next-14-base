@@ -35,7 +35,7 @@ const colorClasses = {
   white: "bg-white",
 }
 
-export const Icon = ({ type, size = "small", color = "black", className = "" }: IconProps) =>
+export const Icon = ({ type, size = "small", color = "white", className = "" }: IconProps) =>
 {
   // アイコンのURLをタイプに基づいて決定
   const iconUrl = `/assets/icons/${type}.svg`;
