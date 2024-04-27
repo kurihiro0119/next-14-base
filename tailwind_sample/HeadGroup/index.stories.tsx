@@ -1,5 +1,5 @@
 import { Button } from "../Button";
-// import { Heading } from "../Heading";
+import { Heading } from "../Heading";
 import { HeadGroup } from ".";
 import { Meta, StoryObj } from "@storybook/react";
 
@@ -8,10 +8,7 @@ const meta = {
   args: {
     children: (
       <>
-        {/* <Heading level={1}>見出し</Heading> */}
-        <Button color="primary" size="small">
-          詳細へ
-        </Button>
+        <Heading level={1}>見出し</Heading>
         <Button color="primary" size="small">
           詳細へ
         </Button>

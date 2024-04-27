@@ -1,19 +1,18 @@
-import { Button } from "./_components/Button";
-import "./globals.css";
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import Link from 'next/link';
 
 export default function Home()
 {
   return (
-    <div className="items-center">
-      <Button size='small'>
-        Click
-      </Button>
-      <Button size='medium'>
-        Click
-      </Button>
-      <Button size='large'>
-        Click
-      </Button>
-    </div>
+    <Stack spacing={2}>
+      <Link href="/table">
+        <Button variant="contained">table</Button>
+      </Link>
+      <Link href="/table/user">
+        <Button variant="contained">User</Button>
+      </Link>
+
+    </Stack>
   );
 }
