@@ -1,5 +1,3 @@
-"use client"
-
 import { UserTable } from "../_components/user/UserTable";
 import Box from '@mui/material/Box';
 

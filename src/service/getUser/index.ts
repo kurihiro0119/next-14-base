@@ -2,14 +2,15 @@ import { handleFailed, handleSucceed, path } from "..";
 
 
 export type User = {
-  userId: number;
+  userid: number;
   id: string;
   title: string;
   body: string;
 }
 
 export async function getUser(): Promise<User[]> {
-  const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+  const apiUrl = path('/testusers');
+  console.log('apiUrl', apiUrl);
   return fetch(apiUrl, {
     next: { tags: ['users'] }, 
   })

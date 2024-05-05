@@ -17,8 +17,7 @@ export const UserTable = async () =>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">userId</TableCell>
+            <TableCell align="right">userid</TableCell>
             <TableCell align="right">  id&nbsp;(g)</TableCell>
             <TableCell align="right">title&nbsp;(g)</TableCell>
             <TableCell align="right">body&nbsp;(g)</TableCell>
@@ -30,10 +29,7 @@ export const UserTable = async () =>
               key={user.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
-                {user.title}
-              </TableCell>
-              <TableCell align="right">{user.userId}</TableCell>
+              <TableCell align="right">{user.userid}</TableCell>
               <TableCell align="right">{user.id}</TableCell>
               <TableCell align="right">{user.title}</TableCell>
               <TableCell align="right">{user.body}</TableCell>
