@@ -23,7 +23,7 @@ export const UserTable = async () =>
             <TableCell align="right">body&nbsp;(g)</TableCell>
           </TableRow>
         </TableHead>
-        <TableBody>
+        <TableBody>kuri
           {users.map((user) => (
             <TableRow
               key={user.id}
